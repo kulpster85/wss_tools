@@ -11,8 +11,6 @@ import datetime
 import os
 import sys
 
-from wss_tools import __version__
-
 # Load all of the global Astropy configuration
 try:
     from sphinx_astropy.conf import *  # noqa
@@ -53,7 +51,7 @@ author = setup_cfg['author']
 copyright = f'{datetime.datetime.now().year}, {author}'
 
 # The full version, including alpha/beta/rc tags.
-release = __version__
+release = "0.1.dev"
 # The short X.Y version.
 version = '.'.join(release.split('.')[:2])
 
