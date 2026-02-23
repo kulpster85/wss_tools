@@ -10,7 +10,8 @@
 import datetime
 import os
 import sys
-from pkg_resources import get_distribution
+
+from wss_tools import __version__
 
 # Load all of the global Astropy configuration
 try:
@@ -52,7 +53,7 @@ author = setup_cfg['author']
 copyright = f'{datetime.datetime.now().year}, {author}'
 
 # The full version, including alpha/beta/rc tags.
-release = get_distribution(project).version
+release = __version__
 # The short X.Y version.
 version = '.'.join(release.split('.')[:2])
 
