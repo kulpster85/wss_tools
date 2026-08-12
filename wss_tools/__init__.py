@@ -12,3 +12,12 @@ Python tools for JWST Wavefront Sensing Software.
 # UI
 from . import utils  # noqa
 from . import quip  # noqa
+
+import importlib.metadata
+
+try:
+    __version__ = importlib.metadata.version("wss_tools")
+except importlib.metadata.PackageNotFoundError:
+    # Fallback if the package is imported from a local source directory
+    # without being installed via pip/setuptools first
+    __version__ = "unknown"

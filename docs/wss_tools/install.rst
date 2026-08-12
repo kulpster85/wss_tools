@@ -16,7 +16,7 @@ Python 3 and then switch to that environment
 (skip this if you want to use default ``base`` environment, but using ``base``
 is not recommended)::
 
-    conda create -n wssenv python=3.8
+    conda create -n wssenv python=3.12
     conda activate wssenv
 
 In that same environment, install the following dependencies from the
@@ -39,10 +39,10 @@ In that same environment, install the following dependencies from the
 Now, you can install ``wss_tools`` using ``pip`` (there was a concious decision
 not to include it in Anaconda nor PyPI)::
 
-    pip install git+https://github.com/spacetelescope/wss_tools.git@master
+    pip install git+https://github.com/spacetelescope/wss_tools.git@main
 
 If you wish to use ``wss_tools`` that is released instead of the development
-version, replace ``@master`` with ``@<version>``, where ``<version>`` is the
+version, replace ``@main`` with ``@<version>``, where ``<version>`` is the
 desired release version.
 
 Dependencies installed using ``conda install`` above can be updated from time
